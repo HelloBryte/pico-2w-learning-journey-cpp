@@ -34,5 +34,5 @@ pico_sdk_init()
 # 包含子项目文件夹
 add_subdirectory(01_blink)
 add_subdirectory(02_external_led)
-add_subdirectory(02_button_led_toggle)
-add_subdirectory(03_pot_breathe)
+add_subdirectory(03_button_led_toggle)
+add_subdirectory(04_pot_breathe)

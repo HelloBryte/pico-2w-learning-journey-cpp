@@ -1,2 +1,25 @@
-build
+# Build output
+build/
+build-*/
+out/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Pico SDK / toolchain generated
+*.elf
+*.uf2
+*.bin
+*.hex
+*.map
+*.dis
+
+# Editor / tooling caches
+.cache/
+
 !.vscode/*

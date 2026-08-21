@@ -35,6 +35,23 @@ This repository documents my learning process with the Raspberry Pi Pico 2W, cov
 - VS Code with Raspberry Pi Pico Extension
 - CMake & Ninja
 
+## Building / 构建
+
+Each numbered folder is a standalone executable target wired into the top-level
+`CMakeLists.txt` via `add_subdirectory`. With the Pico SDK environment set up
+(e.g. via the VS Code extension, or `PICO_SDK_PATH` exported manually):
+
+```bash
+mkdir build && cd build
+cmake -G Ninja ..
+ninja
+```
+
+This builds every target (`blink`, `external_led`, `button_led`, `pot_breathe`);
+the resulting `.uf2` files can be flashed by holding **BOOTSEL** while plugging
+in the Pico 2 W, then copying the file to the `RPI-RP2` mass-storage drive it
+exposes.
+
 ---
 
 # Raspberry Pi Pico 2W 学习笔记
